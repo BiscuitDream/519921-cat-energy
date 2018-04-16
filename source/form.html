@@ -27,7 +27,72 @@
     </header>
 
     <main class="page-main">
+      <h1 class="visually-hidden">Форма подбора программы питания для кота</h1>
 
+      <form class="form" action="https://echo.htmlacademy.ru" method="POST">
+        <h2 class="form__title">Подбор программы</h2>
+        <p class="form__tagline">Заполните анкету и мы подберем программу питания для вашего кота</p>
+        <fieldset class="form__block form__block--basic">
+          <p class="form__item">
+            <label for="form-name">Имя:*</label>
+            <input type="text" id="form-name" name="name" placeholder="Барсик">
+          </p>
+          <p class="form__item">
+            <label for="form-weight">Вес (кг):*</label>
+            <input type="text" id="form-weight" name="weight" placeholder="7">
+          </p>
+          <p class="form__item">
+            <label for="form-age">Возраст (лет):</label>
+            <input type="text" id="form-age" name="age" placeholder="7">
+          </p>
+        </fieldset>
+        <fieldset class="form__block form__block--program-type">
+          <p class="form__item">
+            <input type="radio" id="form-losing-weight" name="program" value="losing weight" checked>
+            <label for="form-losing-weight">Похудение</label>
+          </p>
+          <p class="form__item">
+            <input type="radio" id="form-mass-gathering" name="program" value="mass-gathering">
+            <label for="form-mass-gathering">Набор массы</label></p>
+          <p class="form__item">
+            <input type="radio" id="form-need-advice" name="program" value="need-advice">
+            <label for="form-need-advice">Не знаю (Нужен ваш совет)</label></p>
+        </fieldset>
+        <fieldset class="form__block form__block--contacts">
+          <legend class="form__block-title">Контактные данные (владельца кота)</legend>
+          <p class="form__item">
+            <label for="form-email">E-mail:*</label>
+            <input type="email" id="form-email" name="email" placeholder="kuklachev@gmail.com">
+          </p>
+          <p class="form__item">
+            <label for="form-tel">Телефон:*</label>
+            <input type="tel" id="form-tel" name="telephone" placeholder="8 (960) 900-60-90">
+          </p>
+        </fieldset>
+        <fieldset class="form__block form__block--comment">
+          <legend class="form__block-title">Комментарий</legend>
+          <textarea name="comment" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
+        </fieldset>
+        <fieldset class="form__block form__block--additionally">
+          <legend class="form__block-title">Дополнительно</legend>
+          <p class="form__item">
+            <input type="checkbox" id="form-sweetener" name="sweetener" checked>
+            <label for="form-sweetener">Сахарозаменитель</label>
+          </p>
+          <p class="form__item">
+            <input type="checkbox" id="form-water" name="water">
+            <label for="form-water">Питьевая вода</label>
+          </p>
+          <p class="form__item">
+            <input type="checkbox" id="form-milk" name="milk">
+            <label for="form-milk">Молоко</label></p>
+          <p class="form__item">
+            <input type="checkbox" id="form-vitamins" name="vitamins">
+            <label for="form-vitamins">Витамины</label></p>
+        </fieldset>
+        <button class="form-submit button" type="submit">Отправить заявку</button>
+        <p class="form__required">* — Обязательные поля</p>
+      </form>
 
     </main>
 
