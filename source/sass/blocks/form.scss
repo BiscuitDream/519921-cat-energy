@@ -1,0 +1,33 @@
+.form__title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 60px;
+  color: $black;
+}
+
+.form__tagline {
+  color: $black;
+  text-transform: uppercase;
+}
+
+.form__item {
+  font-size: 16px;
+  color: $input-black;
+  text-transform: uppercase;
+}
+
+.form__block-title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.form__textarea {
+  font: inherit;
+  text-transform: uppercase;
+}
+
+.form__required {
+  line-height: 16px;
+  font-family: $arial;
+}
