@@ -1,0 +1,14 @@
+.features__title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 60px;
+  color: $black;
+}
+
+.features__list {
+  @include list-reset;
+}
+
+.features__text {
+  font-family: $arial;
+}

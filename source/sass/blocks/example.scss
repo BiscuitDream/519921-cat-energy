@@ -1,0 +1,43 @@
+.example {
+  background-color: $gray;
+}
+
+.example__title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 60px;
+  color: $black;
+}
+
+.example__text {
+  font-family: $arial;
+}
+
+.example__value {
+  font-size: 24px;
+  line-height: 24px;
+  color: $black;
+  text-transform: uppercase;
+}
+
+.example__parameter {
+  font-size: 12px;
+  line-height: 12px;
+  font-family: $arial;
+}
+
+.example__description {
+  line-height: 20px;
+  color: $black;
+  text-transform: uppercase;
+}
+
+.example__toggle {
+  font-size: 16px;
+  line-height: 20px;
+  color: $black;
+  text-transform: uppercase;
+
+  background-color: $gray;
+  border: none;
+}
