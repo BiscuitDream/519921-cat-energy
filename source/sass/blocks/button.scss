@@ -3,4 +3,10 @@
   text-transform: uppercase;
 
   background-color: $green;
+
+  &--all {
+    color: $light-black;
+
+    background-color: $gray;
+  }
 }
