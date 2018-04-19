@@ -16,7 +16,11 @@ body {
   margin: 0;
   padding: 0;
   font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
   font-family: "Oswald", "Arial", sans-serif;
+  color: 444444;
+  background-color: #ffffff;
 }
 
 a {
@@ -46,3 +50,29 @@ input[type="radio"].visually-hidden {
   clip: rect(0 0 0 0);
   clip-path: inset(100%);
 }
+
+@import "./blocks/page-header";
+@import "./blocks/main-nav";
+@import "./blocks/page-main";
+@import "./blocks/visually-hidden";
+@import "./blocks/programs";
+@import "./blocks/button";
+@import "./blocks/program-types";
+@import "./blocks/features";
+@import "./blocks/example";
+@import "./blocks/page-footer";
+@import "./blocks/contacts";
+@import "./blocks/logo-footer";
+@import "./blocks/logo-header";
+@import "./blocks/social";
+@import "./blocks/copyright";
+@import "./blocks/catalog";
+@import "./blocks/item";
+@import "./blocks/table";
+@import "./blocks/additional";
+@import "./blocks/form";
+@import "./blocks/input-text";
+@import "./blocks/input-radio";
+@import "./blocks/input-email";
+@import "./blocks/input-tel";
+@import "./blocks/input-checkbox";
