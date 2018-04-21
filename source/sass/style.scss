@@ -1,40 +1,7 @@
-@import "fonts";
 @import "mixins";
 @import "variables";
-
-html {
-  box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
-body {
-  width: 320px;
-  margin: 0;
-  padding: 0;
-
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
-  font-family: "Oswald", "Arial", sans-serif;
-  color: $light-black;
-
-  background-color: #ffffff;
-}
-
-a {
-  text-decoration: none;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
+@import "fonts";
+@import "global";
 @import "./blocks/visually-hidden";
 @import "./blocks/button";
 @import "./blocks/page-header";
