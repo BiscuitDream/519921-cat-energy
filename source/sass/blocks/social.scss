@@ -1,0 +1,34 @@
+.social__list {
+  @include list-reset;
+}
+
+.social__link {
+  display: block;
+
+  &--vkontakte {
+    width: 22px;
+    height: 12px;
+
+    background-image: url("../../img/icon-vk-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+
+  &--instagram {
+    width: 16px;
+    height: 16px;
+
+    background-image: url("../../img/icon-insta-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+
+  &--facebook {
+    width: 10px;
+    height: 19px;
+
+    background-image: url("../../img/icon-fb-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+}

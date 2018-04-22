@@ -3,12 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
     <header class="page-header">
       <a class="page-header__logo logo-header" href="index.html">
-        <img class="page-header__logo-image" src="img/logo-mobile-header.svg" width="101" height="18" alt="Логотип компании Cat Energy">
+        <img class="page-header__logo-image" src="img/logo-mobile.svg" width="200" height="38" alt="Логотип компании Cat Energy">
       </a>
       <nav class="page-header__nav main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
@@ -60,13 +61,13 @@
         </fieldset>
         <fieldset class="form__block form__block--contacts">
           <legend class="form__block-title">Контактные данные (владельца кота)</legend>
-          <p class="form__item input-email">
-            <label class="input-email__label" for="form-email">E-mail:*</label>
-            <input class="input-email__input" type="email" id="form-email" name="email" placeholder="kuklachev@gmail.com">
+          <p class="form__item input-text">
+            <label class="input-text__label" for="form-email">E-mail:*</label>
+            <input class="input-text__input" type="email" id="form-email" name="email" placeholder="kuklachev@gmail.com">
           </p>
-          <p class="form__item input-tel">
-            <label class="input-tel__label" for="form-tel">Телефон:*</label>
-            <input class="input-tel__input" type="tel" id="form-tel" name="telephone" placeholder="8 (960) 900-60-90">
+          <p class="form__item input-text">
+            <label class="input-text__label" for="form-tel">Телефон:*</label>
+            <input class="input-text__input" type="tel" id="form-tel" name="telephone" placeholder="8 (960) 900-60-90">
           </p>
         </fieldset>
         <fieldset class="form__block form__block--comment">
@@ -106,23 +107,23 @@
       </div>
 
       <div class="page-footer__map">
-        <img src="img/map.png" width="320" height="400" alt="Местонахождение магазина на карте">
+        <img src="img/bg-map-mobile@1x.png" width="320" height="400" alt="Местонахождение магазина на карте">
       </div>
 
       <a class="page-footer__logo logo-footer">
-        <img class="page-footer__logo-image" width="128" height="24" src="img/footer-logo.svg" alt="Логотип компании Cat Energy">
+        <img class="page-footer__logo-image" width="128" height="24" src="img/logo-footer.svg" alt="Логотип компании Cat Energy">
       </a>
 
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="#vkontakte">Мы в Вконтакте</a>
+            <a class="social__link social__link--vkontakte" href="#vkontakte"><span class="visually-hidden">Мы в Вконтакте</span></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--instagram" href="#instagram">Мы в инстаграме</a>
+            <a class="social__link social__link--instagram" href="#instagram"><span class="visually-hidden">Мы в инстаграме</span></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--facebook" href="#facebook">Мы в Фейсбуке</a>
+            <a class="social__link social__link--facebook" href="#facebook"><span class="visually-hidden">Мы в Фейсбуке</span></a>
           </li>
         </ul>
       </div>
