@@ -1,7 +1,45 @@
 .page-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 320px;
+  margin: 0 auto;
+
+  font-weight: 500;
   font-size: 20px;
   line-height: 20px;
   color: $black;
   text-transform: uppercase;
-  font-weight: 500;
+}
+
+.page-header__logo {
+  height: 65px;
+  padding-top: 11px;
+
+  border-bottom: 1px solid #e6e6e6;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    flex-direction: row;
+    width: 708px;
+  }
+
+  .page-header__logo {
+    border: none;
+  }
+
+  .page-header__nav {
+    width: 440px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    width: 1220px;
+  }
+
+  .page-header__nav {
+    width: 480px;
+  }
 }
