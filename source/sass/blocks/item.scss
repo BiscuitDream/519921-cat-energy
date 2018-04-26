@@ -11,3 +11,19 @@
   line-height: 16px;
   font-family: $arial;
 }
+
+@media (min-width: $tablet-width) {
+  .item {
+    width: 324px;
+  }
+
+  .item__caption {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .item {
+    width: 245px;
+  }
+}
