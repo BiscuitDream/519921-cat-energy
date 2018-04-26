@@ -1,3 +1,8 @@
+.additional {
+  width: 320px;
+  margin: 0 auto;
+}
+
 .additional__title {
   font-weight: 400;
   font-size: 24px;
@@ -6,12 +11,26 @@
 
 .additional__list {
   @include list-reset;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.additional__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.additional__item-wrapper {
+  display: flex;
+  flex-direction: column;
 }
 
 .additional__caption {
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
+  color: $input-black;
   text-transform: uppercase;
 }
 
@@ -44,4 +63,44 @@
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
+}
+
+@media (min-width: $tablet-width) {
+  .additional {
+    width: 768px;
+  }
+
+  .additional__title {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .additional__item-wrapper {
+    flex-direction: row;
+  }
+
+  .additional__caption {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .additional__volume {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .additional__price {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .additional {
+    width: 1440px;
+  }
+
+  .additional__item {
+    flex-direction: row;
+  }
 }
