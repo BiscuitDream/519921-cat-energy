@@ -14,7 +14,7 @@
 
 @media (min-width: $tablet-width) {
   .item {
-    width: 324px;
+    width: (100% / 2);
   }
 
   .item__caption {
@@ -24,6 +24,6 @@
 
 @media (min-width: $desktop-width) {
   .item {
-    width: 245px;
+    width: (100% / 4);
   }
 }
