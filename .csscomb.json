@@ -30,6 +30,12 @@
   "vendor-prefix-align": true,
   "sort-order": [
     [
+      "$variable",
+      "$include",
+      "$extend",
+      "$import"
+    ],
+    [
       "content",
       "position",
       "top",

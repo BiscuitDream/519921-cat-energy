@@ -1,8 +1,13 @@
 .contacts {
+  display: flex;
+  justify-content: space-between;
+
   background-color: #ffffff;
 }
 
 .contacts__text {
+  width: 140px;
+
   font-size: 16px;
   line-height: 20px;
   color: $black;
@@ -10,6 +15,19 @@
 }
 
 .contacts__address {
+  width: 140px;
+
   line-height: 20px;
   font-family: $arial;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts__text {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .contacts__address {
+    font-size: 16px;
+  }
 }

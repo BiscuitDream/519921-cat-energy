@@ -1,3 +1,4 @@
+@import "normalize";
 @import "mixins";
 @import "variables";
 @import "fonts";
@@ -6,6 +7,7 @@
 @import "./blocks/button";
 @import "./blocks/catalog";
 @import "./blocks/contacts";
+@import "./blocks/container";
 @import "./blocks/copyright";
 @import "./blocks/example";
 @import "./blocks/features";

@@ -1,3 +1,10 @@
+.programs {
+  width: 320px;
+  margin: 0 auto;
+
+  text-align: center;
+}
+
 .programs__header {
   color: #ffffff;
 
@@ -12,7 +19,40 @@
   line-height: 36px;
 }
 
+.programs__slogan {
+  text-transform: uppercase;
+}
+
 .programs__form-link {
   font-size: 14px;
   line-height: 18px;
+}
+
+@media (min-width: $tablet-width) {
+  .programs {
+    width: 768px;
+    margin: 0 auto;
+
+    text-align: left;
+  }
+
+  .programs__header {
+    color: $black;
+  }
+
+  .programs__title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .programs__slogan {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .programs {
+    width: 1300px;
+  }
 }

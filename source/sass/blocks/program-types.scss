@@ -1,4 +1,11 @@
+.program-types {
+  text-align: left;
+}
+
 .program-types__list {
+  display: flex;
+  flex-direction: column;
+
   @include list-reset;
 }
 
@@ -23,4 +30,26 @@
   line-height: 16px;
   color: $black;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .program-types__title {
+    font-size: 36px;
+  }
+
+  .program-types__text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .program-types__link {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .program-types__list {
+    flex-direction: row;
+  }
 }

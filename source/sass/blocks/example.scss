@@ -1,5 +1,15 @@
 .example {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  margin: 0 auto;
+
   background-color: $gray;
+}
+
+.example__wrapper-big {
+  display: flex;
+  flex-direction: column;
 }
 
 .example__title {
@@ -11,6 +21,11 @@
 
 .example__text {
   font-family: $arial;
+}
+
+.example__wrapper-small {
+  display: flex;
+  flex-direction: column;
 }
 
 .example__value {
@@ -40,4 +55,52 @@
 
   background-color: $gray;
   border: none;
+}
+
+@media (min-width: $tablet-width) {
+  .example {
+    width: 768px;
+  }
+
+  .example__title {
+    font-size: 60px;
+  }
+
+  .example__text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .example__wrapper-small {
+    flex-direction: row;
+  }
+
+  .example__value {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .example__parameter {
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  .example__description {
+    font-size: 20px;
+  }
+
+  .example__toggle {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example {
+    flex-direction: row;
+    width: 1300px;
+  }
+
+  .example__wrapper-big {
+    width: 610px;
+  }
 }
