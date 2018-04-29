@@ -1,3 +1,11 @@
 .copyright {
-  // свойства
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    padding: 0;
+  }
 }
