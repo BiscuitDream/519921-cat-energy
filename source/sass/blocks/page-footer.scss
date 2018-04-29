@@ -7,6 +7,10 @@
   background-color: $gray;
 }
 
+.page-footer__map {
+  min-height: 365px;
+}
+
 .footer__wrapper {
   display: flex;
   flex-direction: column;
@@ -18,6 +22,10 @@
     width: 768px;
   }
 
+  .page-footer__map {
+    min-height: 400px;
+  }
+
   .footer__wrapper {
     flex-direction: row;
   }
@@ -26,5 +34,6 @@
 @media (min-width: $desktop-width) {
   .page-footer {
     width: 1440px;
+    position: relative;
   }
 }
