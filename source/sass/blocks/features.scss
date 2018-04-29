@@ -4,6 +4,11 @@
 }
 
 .features__title {
+  width: (280px / 320px) * 100%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  margin-left: 20px;
+
   font-weight: 400;
   font-size: 36px;
   line-height: 60px;
@@ -14,7 +19,57 @@
   @include list-reset;
 }
 
+.features__item {
+  position: relative;
+
+  width: (280px / 320px) * 100%; //87.5%
+  margin: 0 auto;
+  margin-bottom: 20px;
+  padding-left: 80px;
+
+  // &:last-child {
+  //   margin-bottom: 42px;
+  // }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+
+    width: 60px;
+    height: 60px;
+
+    background-color: $green;
+  }
+
+  &--nutrients::before {
+    background-image: url("../../img/advantage-leaf@1x.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+
+  &--powder::before {
+    background-image: url("../../img/advantage-powder@1x.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+
+  &--eating::before {
+    background-image: url("../../img/advantage-dining@1x.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+
+  &--month::before {
+    background-image: url("../../img/advantage-clock@1x.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+}
+
 .features__text {
+  margin: 0;
+
   font-family: $arial;
 }
 
@@ -24,6 +79,9 @@
   }
 
   .features__title {
+    margin-bottom: 60px;
+    margin-left: 30px;
+
     font-size: 60px;
     line-height: 60px;
   }
@@ -31,21 +89,28 @@
   .features__list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    // justify-content: space-between;
   }
 
   .features__item {
-    width: 245px;
+    width: 50%;
+    margin-bottom: 90px;
+    padding-top: 110px;
+    padding-right: 80px;
+    padding-left: 30px;
+
+    // &:last-child {
+    //   margin-bottom: 90px;
+    // }
+
+    &::before {
+      top: 0;
+      left: 30px;
+
+      width: 80px;
+      height: 80px;
+    }
   }
-
-  // .features__item:nth-child(odd) {
-  //   width: 215px;
-  //   margin-right: 140px;
-  // }
-
-  // .features__item:nth-child(even) {
-  //   width: 250px;
-  // }
 
   .features__text {
     font-size: 16px;
@@ -55,6 +120,21 @@
 
 @media (min-width: $desktop-width) {
   .features {
-    width: 1220px;
+    width: 1300px;
+  }
+
+  .features__title {
+    margin-left: 40px;
+  }
+
+  .features__item {
+    width: (100% / 4);
+    padding-top: 100px;
+    padding-right: 40px;
+    padding-left: 40px;
+
+    &::before {
+      left: 40px;
+    }
   }
 }
