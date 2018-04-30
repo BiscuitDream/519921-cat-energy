@@ -4,10 +4,17 @@
 }
 
 .catalog__title {
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 25px;
+  padding-left: 20px;
+
   font-weight: 400;
   font-size: 36px;
   line-height: 60px;
   color: $black;
+
+  border-bottom: 1px solid #ededed;
 }
 
 .catalog__list {
@@ -15,6 +22,8 @@
 
   display: flex;
   flex-direction: column;
+  width: 280px;
+  margin: 0 auto;
 }
 
 @media (min-width: $tablet-width) {
@@ -24,11 +33,14 @@
 
   .catalog__title {
     font-size: 60px;
+
+    border: none;
   }
 
   .catalog__list {
     flex-direction: row;
     flex-wrap: wrap;
+    width: 768px;
   }
 }
 
@@ -36,5 +48,9 @@
 @media (min-width: $desktop-width) {
   .catalog {
     width: 1440px;
+  }
+
+  .catalog__list {
+    width: 1300px;
   }
 }
