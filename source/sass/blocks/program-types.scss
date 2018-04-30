@@ -44,10 +44,38 @@
 }
 
 .program-types__link {
+  position: relative;
+
   font-size: 16px;
   line-height: 16px;
   color: $black;
   text-transform: uppercase;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -30px;
+
+    width: 20px;
+    height: 3px;
+
+    background-color: $black;
+    transform: translateY(-50%);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -37px;
+
+    border: 7px solid $black;
+    border-top-color: transparent;
+    border-right: none;
+    border-bottom-color: transparent;
+    transform: translateY(-50%);
+  }
 }
 
 @media (min-width: $tablet-width) {
