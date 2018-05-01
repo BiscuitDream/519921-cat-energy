@@ -14,19 +14,32 @@
 
   display: flex;
   flex-direction: column;
+  width: 280px;
+  margin: 0 auto;
 }
 
 .additional__item {
   display: flex;
   flex-direction: column;
+  padding-top: 15px;
+  padding-bottom: 17px;
+
+  border-bottom: 1px solid #cdcdcd;
+
+  &:first-child {
+    border-top: 1px solid #cdcdcd;
+  }
 }
 
-.additional__item-wrapper {
+.additional__wrapper-item {
   display: flex;
   flex-direction: column;
 }
 
 .additional__caption {
+  margin: 0;
+  margin-bottom: 15px;
+
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
@@ -34,13 +47,24 @@
   text-transform: uppercase;
 }
 
+.additional__wrapper-cost {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
 .additional__volume {
+  margin: 0;
+
   font-size: 14px;
   line-height: 14px;
   font-family: $arial;
 }
 
 .additional__price {
+  margin: 0;
+
   font-size: 14px;
   line-height: 14px;
   font-family: $arial;
@@ -75,8 +99,23 @@
     line-height: 36px;
   }
 
-  .additional__item-wrapper {
+  .additional__list {
+    width: 708px;
+  }
+
+  .additional__item {
+    padding-top: 25px;
+    padding-right: 40px;
+    padding-bottom: 25px;
+    padding-left: 40px;
+
+    border-right: 1px solid #cdcdcd;
+    border-left: 1px solid #cdcdcd;
+  }
+
+  .additional__wrapper-item {
     flex-direction: row;
+    justify-content: space-between;
   }
 
   .additional__caption {
@@ -90,17 +129,46 @@
   }
 
   .additional__price {
+    width: 95px;
+
     font-size: 16px;
     line-height: 20px;
+    text-align: right;
   }
 }
 
 @media (min-width: $desktop-width) {
   .additional {
-    width: 1440px;
+    width: 1300px;
+    margin-right: 40px;
+    margin-left: 40px;
+  }
+
+  .additional__list {
+    width: 75%;
+    margin: 0;
+    padding-right: 40px;
+    padding-left: 40px;
   }
 
   .additional__item {
     flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-top: 16px;
+    padding-right: 0;
+    padding-bottom: 16px;
+    padding-left: 0;
+
+    border-right: none;
+    border-left: none;
+  }
+
+  .additional__wrapper-item {
+    width: 68%;  //610px
+  }
+
+  .additional__wrapper-cost {
+    width: 47%;   //285px
   }
 }
