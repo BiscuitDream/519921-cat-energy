@@ -1,6 +1,9 @@
 .additional {
   width: 320px;
   margin: 0 auto;
+  margin-bottom: 35px;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 .additional__title {
@@ -16,6 +19,7 @@
   flex-direction: column;
   width: 280px;
   margin: 0 auto;
+  margin-bottom: 39px;
 }
 
 .additional__item {
@@ -84,14 +88,20 @@
 }
 
 .additional__offer-title {
+  width: 170px;
+  margin: 0 auto;
+
   font-size: 16px;
   line-height: 20px;
+  text-align: center;
   color: #ffffff;
 }
 
 @media (min-width: $tablet-width) {
   .additional {
     width: 768px;
+    padding-right: 30px;
+    padding-left: 30px;
   }
 
   .additional__title {
@@ -142,6 +152,10 @@
     width: 1300px;
     margin-right: 40px;
     margin-left: 40px;
+  }
+
+  .additional__wrapper {
+    display: flex;
   }
 
   .additional__list {
