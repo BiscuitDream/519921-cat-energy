@@ -32,6 +32,8 @@
   }
 
   .catalog__title {
+    padding-left: 30px;
+
     font-size: 60px;
 
     border: none;
@@ -48,6 +50,10 @@
 @media (min-width: $desktop-width) {
   .catalog {
     width: 1440px;
+  }
+
+  .catalog__title {
+    padding-left: 110px;
   }
 
   .catalog__list {
