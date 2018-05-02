@@ -1,3 +1,9 @@
 .input-radio {
-  // property
+  margin-bottom: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .input-radio {
+    margin-bottom: 30px;
+  }
 }

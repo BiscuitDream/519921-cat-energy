@@ -1,4 +1,30 @@
+.input-text {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 14px;
+}
+
 .input-text__input {
+  flex-grow: 1;
+  height: 45px;
+  margin-left: 15px;
+  padding-right: 15px;
+  padding-left: 15px;
+
   font: inherit;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .input-text {
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .input-text {
+    &--contact {
+      width: 570px;
+    }
+  }
 }
