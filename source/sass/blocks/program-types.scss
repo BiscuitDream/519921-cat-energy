@@ -105,27 +105,52 @@
     padding-top: 75px;
     padding-right: 20px;
     padding-bottom: 60px;
-    padding-left: 50px;
+    padding-left: 53px;
   }
 
   .program-types__title {
+    margin-top: 0;
+    margin-bottom: 26px;
+    padding: 0;
+
     font-size: 36px;
+
+    &::before {
+      top: 17px;
+      right: 42px;
+      left: auto;
+
+      width: 200px;
+      height: 200px;
+    }
   }
 
   .program-types__text {
     width: 375px;
-    margin-bottom: 50px;
+    margin-bottom: 56px;
     padding: 0;
 
     font-size: 16px;
     line-height: 24px;
 
     border: none;
+
+    &--mass {
+      width: 343px;
+    }
   }
 
   .program-types__link {
     font-size: 20px;
     line-height: 20px;
+
+    &::before {
+      right: -40px;
+    }
+
+    &::after {
+      right: -46px;
+    }
   }
 }
 

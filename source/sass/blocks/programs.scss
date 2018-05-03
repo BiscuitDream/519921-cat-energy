@@ -52,11 +52,16 @@
   .programs {
     width: 768px;
     margin: 0 auto;
+    margin-bottom: 20px;
 
     text-align: left;
   }
 
   .programs__header {
+    min-height: 810px;
+    margin: 0;
+    padding: 0;
+
     color: $black;
 
     background: none;
@@ -70,12 +75,15 @@
 
   .programs__title {
     width: 430px;
+    margin-bottom: 42px;
 
     font-size: 60px;
     line-height: 60px;
   }
 
   .programs__slogan {
+    margin-bottom: 47px;
+
     font-size: 20px;
     line-height: 20px;
   }
@@ -90,7 +98,7 @@
   .programs__form-link {
     position: relative;
 
-    margin-top: -1px;
+    // margin-top: -1px;
   }
 }
 
