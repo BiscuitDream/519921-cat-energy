@@ -7,7 +7,7 @@
 
 .programs__header {
   margin-bottom: 22px;
-  padding-top: 20px;
+  padding-top: 27px;
 
   color: #ffffff;
 
@@ -25,7 +25,7 @@
 
 .programs__title {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 23px;
 
   font-weight: 400;
   font-size: 36px;
@@ -34,9 +34,13 @@
 
 .programs__slogan {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 26px;
 
   text-transform: uppercase;
+}
+
+.programs__picture {
+  margin-bottom: 3px;
 }
 
 // .programs__form-link {

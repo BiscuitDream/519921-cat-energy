@@ -3,8 +3,6 @@
   flex-direction: column;
   width: 320px;
   margin: 0 auto;
-  padding-top: 30px;
-  padding-bottom: 30px;
 
   background-color: $gray;
 }
@@ -12,6 +10,7 @@
 .example__wrapper {
   width: 280px;
   margin: 0 auto;
+  padding-top: 17px;
 }
 
 .example__wrapper-big {
@@ -21,7 +20,7 @@
 
 .example__title {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 
   font-weight: 400;
   font-size: 36px;
@@ -30,8 +29,9 @@
 }
 
 .example__text {
+  width: 270px;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 
   font-family: $arial;
 }
