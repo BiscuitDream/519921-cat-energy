@@ -8,7 +8,10 @@
 }
 
 .page-footer__map {
-  min-height: 365px;
+  min-height: 362px;
+
+  background-image: url("../img/bg-map-mobile@1x.png");
+  background-repeat: no-repeat;
 }
 
 .page-footer__wrapper {
@@ -18,7 +21,7 @@
   width: 280px;
   margin: 0 auto;
   padding-top: 40px;
-  padding-bottom: 25px;
+  padding-bottom: 16px;
 }
 
 .page-footer__logo {

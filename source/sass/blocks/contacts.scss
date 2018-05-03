@@ -2,12 +2,16 @@
   display: flex;
   justify-content: space-between;
   width: 320px;
-  padding-top: 25px;
+  padding-top: 29px;
   padding-right: 20px;
   padding-bottom: 25px;
   padding-left: 20px;
 
   background-color: $gray;
+
+  &--white {
+    background-color: #ffffff;
+  }
 }
 
 .contacts__text {

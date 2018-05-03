@@ -76,7 +76,7 @@
 
       <section class="example">
         <div class="example__wrapper">
-          <div class="example__wrapper-big">
+          <div class="example__wrapper-big example__wrapper-big--description">
             <h2 class="example__title">Живой пример</h2>
             <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
             <div class="example__wrapper-small">
@@ -96,12 +96,14 @@
             </div>
           </div>
           <div class="example__wrapper-big">
-            <img class="example__before" src="img/before-mobile@1x.png" width="311" height="232" alt="Кот до похудения">
-            <p class="example__live">
+            <img class="example__before" src="img/before-mobile@1x.png" width="320" height="240" alt="Кот до похудения">
+            <div class="example__range-control">
               <button class="example__toggle" type="button">Было</button>
-              <input type="checkbox" id="exapmle-checkbox" name="example">
+              <div class="example__range-scale" >
+                <div class="example__range-bar"></div>
+              </div>
               <button class="example__toggle" type="button">Стало</button>
-            </p>
+            </div>
           </div>
         </div>
       </section>
@@ -109,13 +111,13 @@
 
     <footer class="page-footer">
       <h2 class="visually-hidden">Контакты</h2>
-      <div class="page-footer__contacts contacts">
-        <p class="contacts__text">Приглашаем к сотрудничеству дилеров!</p>
+      <div class="page-footer__contacts contacts contacts--white">
+        <p class="contacts__text">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
         <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       </div>
 
       <div class="page-footer__map">
-        <img src="img/bg-map-mobile@1x.png" width="320" height="400" alt="Местонахождение магазина на карте">
+        <!-- <img src="img/bg-map-mobile@1x.png" width="320" height="400" alt="Местонахождение магазина на карте"> -->
       </div>
 
       <div class="page-footer__wrapper">
@@ -125,13 +127,13 @@
 
         <div class="page-footer__social social">
           <ul class="social__list">
-            <li class="social__item">
+            <li class="social__item social__item--vkontakte">
               <a class="social__link social__link--vkontakte" href="#vkontakte"><span class="visually-hidden">Мы в Вконтакте</span></a>
             </li>
-            <li class="social__item">
+            <li class="social__item social__item--instagram">
               <a class="social__link social__link--instagram" href="#instagram"><span class="visually-hidden">Мы в инстаграме</span></a>
             </li>
-            <li class="social__item">
+            <li class="social__item social__item--facebook">
               <a class="social__link social__link--facebook" href="#facebook"><span class="visually-hidden">Мы в Фейсбуке</span></a>
             </li>
           </ul>
@@ -139,8 +141,8 @@
 
         <div class="page-footer__copyright copyright">
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <img src="img/htmlacademy.svg" width="27" height="34" alt="Логотип HTML Academy">
+          <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
+            <img src="img/htmlacademy.svg" width="40" height="40" alt="Логотип HTML Academy">
           </a>
         </div>
       </div>
