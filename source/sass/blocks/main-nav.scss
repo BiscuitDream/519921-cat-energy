@@ -38,6 +38,12 @@
 
   .main-nav__link {
     color: $input-black;
+
+    &--active {
+      padding-bottom: 7px;
+
+      border-bottom: 2px solid $green;
+    }
   }
 }
 
@@ -52,6 +58,10 @@
   }
 
   .main-nav__link {
+    padding-bottom: 4px;
+
     // color: #ffffff;
+
+    // border-bottom: 2px solid #ffffff;
   }
 }
