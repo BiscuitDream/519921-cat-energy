@@ -62,7 +62,6 @@
   .page-header {
     flex-direction: row;
     width: 708px;
-    margin-bottom: 73px;
   }
 
   .page-header__logo {
@@ -80,6 +79,5 @@
 @media (min-width: $desktop-width) {
   .page-header {
     width: 1220px;
-    margin-bottom: 122px;
   }
 }
