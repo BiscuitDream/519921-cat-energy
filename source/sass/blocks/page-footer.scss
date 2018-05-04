@@ -42,14 +42,15 @@
   }
 
   .page-footer__map {
-    min-height: 400px;
+    min-height: 396px;
   }
 
   .page-footer__wrapper {
     flex-direction: row;
+    align-items: center;
     width: 708px;
-    padding-top: 50px;
-    padding-bottom: 60px;
+    padding-top: 53px;
+    padding-bottom: 52px;
   }
 
   .page-footer__logo {
