@@ -39,14 +39,15 @@
   &::before {
     content: "";
     position: absolute;
-    top: -6px;
-    left: 2px;
+    top: 50%;
+    left: 0;
 
     width: 50px;
     height: 50px;
 
-    background-color: $green;
+    background-color: #68b738;
     border-radius: 50%;
+    transform: translateY(-50%);
   }
 }
 
@@ -111,12 +112,12 @@
   .program-types__title {
     margin-top: 0;
     margin-bottom: 26px;
-    padding: 0;
+    padding-left: 0;
 
     font-size: 36px;
 
     &::before {
-      top: 17px;
+      top: 117px;
       right: 42px;
       left: auto;
 
@@ -166,11 +167,29 @@
   .program-types__item {
     width: 50%;
     margin-right: 40px;
+    margin-bottom: 0;
     margin-left: 40px;
     padding-right: 55px;
   }
 
+  .program-types__title {
+    margin-bottom: 75px;
+    padding-left: 160px;
+
+    &::before {
+      top: 50%;
+      right: auto;
+      left: 0;
+
+      width: 100px;
+      height: 100px;
+
+      transform: translateY(-50%);
+    }
+  }
+
   .program-types__text {
     width: auto;
+    margin-bottom: 32px;
   }
 }

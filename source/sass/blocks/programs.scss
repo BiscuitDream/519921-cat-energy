@@ -105,13 +105,26 @@
 @media (min-width: $desktop-width) {
   .programs {
     width: 1300px;
+    margin-bottom: 77px;
+  }
+
+  .programs__header {
+    min-height: 474px;
+    margin-bottom: 80px;
   }
 
   .programs__header-wrapper {
     width: 1220px;
+    padding-left: 80px;
+  }
+
+  .programs__slogan {
+    margin-bottom: 52px;
   }
 
   .programs__picture {
+    margin-top: -150px;
+
     transform: translateX(500px) translateY(-100px);
   }
 }
