@@ -70,19 +70,23 @@
     left: 110px;
 
     width: 570px;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 65px;
+    padding-right: 76px;
+    padding-bottom: 57px;
+    padding-left: 76px;
 
     background-color: #ffffff;
   }
 
   .contacts__text {
-    width: 245px;
-    padding-left: 75px;
+    width: 170px;
+    padding-left: 0;
   }
 
   .contacts__address {
-    width: 245px;
-    padding-right: 90px;
+    width: 170px;
+    padding-right: 0;
+
+    text-align: left;
   }
 }
