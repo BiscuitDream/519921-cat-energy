@@ -90,7 +90,7 @@
 
 @media (min-width: $tablet-width) {
   .item {
-    width: (100% / 2);
+    width: 50%;
     padding-right: 30px;
     padding-left: 30px;
 
@@ -98,7 +98,8 @@
   }
 
   .item__wrapper {
-    align-items: center;
+    align-items: stretch;
+    // align-items: center;
     padding-right: 38px;
     padding-bottom: 40px;
     padding-left: 38px;
@@ -109,10 +110,25 @@
 
   .item__wrapper-inner {
     flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .item__wrapper-caption {
+    padding-top: 20px;
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
   }
 
   .item__caption {
+    width: auto;
+    margin: 0 auto;
+
     font-size: 20px;
+    text-align: center;
+    // marg
   }
 }
 
