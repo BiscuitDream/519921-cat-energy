@@ -1,5 +1,13 @@
 .input-radio {
-  margin-bottom: 20px;
+  margin-bottom: 25px;
+}
+
+.input-radio__label {
+  position: relative;
+
+  padding-left: 29px;
+
+  cursor: pointer;
 }
 
 @media (min-width: $tablet-width) {

@@ -1,5 +1,9 @@
 .input-checkbox {
-  margin-bottom: 20px;
+  margin-bottom: 24px;
+}
+
+.input-checkbox__label {
+  padding-left: 30px;
 }
 
 @media (min-width: $tablet-width) {
