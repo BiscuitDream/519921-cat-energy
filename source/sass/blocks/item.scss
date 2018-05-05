@@ -7,6 +7,10 @@
 
   border-bottom: 1px solid #ededed;
 
+  &:first-child {
+    border-top: 1px solid #ededed;
+  }
+
   &--more {
     text-align: center;
   }
@@ -105,6 +109,9 @@
     // &--more {
     //   background-color: #ffffff;
     // }
+    &:first-child {
+      border: none;
+    }
 
     &:nth-last-child(2) {
       margin-bottom: 0;

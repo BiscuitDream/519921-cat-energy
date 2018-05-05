@@ -1,23 +1,23 @@
 .catalog {
   width: 320px;
   margin: 0 auto;
-  // padding-top: 15px;
+  padding-top: 15px;
   // padding-right: 20px;
   // padding-left: 20px;
 }
 
 .catalog__title {
   margin: 0;
-  padding-top: 15px;
-  padding-bottom: 28px;
-  padding-left: 20px;
+  // padding-top: 15px;
+  margin-bottom: 28px;
+  margin-left: 20px;
 
   font-weight: 400;
   font-size: 36px;
   line-height: 60px;
   color: $black;
 
-  border-bottom: 1px solid #ededed;
+  // border-bottom: 1px solid #ededed;
 }
 
 .catalog__list {
@@ -33,12 +33,12 @@
   .catalog {
     width: 768px;
     margin-bottom: 38px;
+    padding-top: 73px;
   }
 
   .catalog__title {
-    padding-top: 73px;
-    padding-bottom: 165px;
-    padding-left: 30px;
+    margin-bottom: 165px;
+    margin-left: 30px;
 
     font-size: 60px;
 
@@ -59,7 +59,7 @@
   }
 
   .catalog__title {
-    padding-left: 110px;
+    margin-left: 110px;
   }
 
   .catalog__list {
