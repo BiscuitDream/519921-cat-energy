@@ -113,13 +113,13 @@
       border: none;
     }
 
-    &:nth-last-child(2) {
-      margin-bottom: 0;
-    }
+    // &:nth-last-child(2) {
+    //   margin-bottom: 0;
+    // }
 
-    &:last-child {
-      margin-bottom: 0;
-    }
+    // &:last-child {
+    //   margin-bottom: 0;
+    // }
   }
 
   .item__wrapper {
@@ -168,57 +168,51 @@
     text-align: center;
 
     &--more {
-      position: relative;
-
+      // position: relative;
       margin-bottom: 25px;
 
-      // width: auto;
-      // margin-bottom: 7px;
-
       &::before {
-        // content: "";
-        // position: absolute;
-        top: -38px;
-        // left: 50%;
+        top: -82px;
 
-        width: 30px;
-        // height: 2px;
-
-        // background-color: #d3d3d3;
-        // transform: translateX(-50%);
+        width: 60px;
       }
 
       &::after {
-        // content: "";
-        // position: absolute;
-        top: -52px;
-        // left: 50%;
-        // width: 2px;
+        top: -111px;
 
-        height: 30px;
-
-        // background-color: #d3d3d3;
-        // transform: translateX(-50%);
+        height: 60px;
       }
     }
   }
 
   .item_description {
     margin-right: 35px;
-    // margin: 0;
-    // margin-bottom: 20px;
     margin-left: 35px;
 
     font-size: 16px;
     line-height: normal;
-    // font-family: $arial;
   }
 }
 
 @media (min-width: $desktop-width) {
   .item {
     width: (100% / 4);
+    margin-bottom: 142px;
     padding-right: 40px;
     padding-left: 40px;
+  }
+
+  .item__caption {
+    margin-right: 15px;
+    margin-bottom: 18px;
+    margin-left: 15px;
+
+    &--more {
+      margin-bottom: 25px;
+    }
+  }
+
+  .item_description {
+    margin: 0;
   }
 }

@@ -49,6 +49,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     width: 768px;
+    margin-bottom: -140px;
   }
 }
 
@@ -56,6 +57,8 @@
 @media (min-width: $desktop-width) {
   .catalog {
     width: 1440px;
+    margin-bottom: 47px;
+    padding-top: 88px;
   }
 
   .catalog__title {
@@ -64,5 +67,6 @@
 
   .catalog__list {
     width: 1300px;
+    margin-bottom: -142px;
   }
 }
