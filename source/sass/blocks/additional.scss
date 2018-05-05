@@ -104,6 +104,7 @@
   min-height: 289px;
   padding-top: 188px;
 
+  background-color: $green;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -140,9 +141,11 @@
     width: 768px;
     padding-right: 30px;
     padding-left: 30px;
+    margin-bottom: 76px;
   }
 
   .additional__title {
+    margin-bottom: 80px;
     margin-left: 38px;
 
     font-size: 36px;
@@ -158,7 +161,7 @@
       height: 3px;
 
       background-color: $green;
-      transform: translateY(-50%);
+      // transform: translateY(-50%);
     }
 
     &::after {
@@ -170,13 +173,14 @@
 
   .additional__list {
     width: 708px;
+    margin-bottom: 69px;
   }
 
   .additional__item {
     padding-top: 25px;
-    padding-right: 40px;
-    padding-bottom: 25px;
-    padding-left: 40px;
+    padding-right: 36px;
+    padding-bottom: 27px;
+    padding-left: 36px;
 
     border-right: 1px solid #cdcdcd;
     border-left: 1px solid #cdcdcd;
@@ -185,24 +189,53 @@
   .additional__wrapper-item {
     flex-direction: row;
     justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 22px;
   }
 
   .additional__caption {
+    margin-bottom: 0;
+
     font-size: 20px;
     line-height: 20px;
   }
 
+  .additional__wrapper-cost {
+    margin-bottom: 0;
+  }
+
   .additional__volume {
+    margin-right: 52px;
+
     font-size: 16px;
     line-height: 20px;
   }
 
   .additional__price {
-    width: 95px;
-
     font-size: 16px;
     line-height: 20px;
     text-align: right;
+  }
+
+  .additional__offer {
+    min-height: 200px;
+    padding-top: 73px;
+    padding-right: 115px;
+    padding-left: 424px;
+
+    &::before {
+      top: 50%;
+      left: 90px;
+
+      transform: translateY(-50%);
+    }
+  }
+
+  .additional__offer-title {
+    width: auto;
+    // margin: 0 auto;
+
+    text-align: left;
   }
 }
 

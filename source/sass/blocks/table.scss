@@ -1,7 +1,6 @@
 .table {
   // width: 100%;
   // width: 140px;
-
   border-collapse: collapse;
   font-size: 12px;
   line-height: 16px;
@@ -28,7 +27,15 @@
 
 @media (min-width: $tablet-width) {
   .table {
-    font-size: 16px;
     width: auto;
+
+    font-size: 16px;
+  }
+
+  .table td {
+    padding-top: 8px;
+    padding-bottom: 7px;
+
+    border-bottom: 1px solid #cdcdcd;
   }
 }
