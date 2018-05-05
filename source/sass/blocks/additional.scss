@@ -2,12 +2,16 @@
   width: 320px;
   margin: 0 auto;
   margin-bottom: 35px;
+  padding-top: 29px;
   padding-right: 20px;
   padding-left: 20px;
 }
 
 .additional__title {
   position: relative;
+
+  margin: 0;
+  margin-bottom: 34px;
 
   font-weight: 400;
   font-size: 24px;
@@ -23,7 +27,7 @@
     height: 3px;
 
     background-color: $green;
-    transform: translateY(-50%);
+    // transform: translateY(-50%);
   }
 }
 
@@ -40,7 +44,7 @@
 .additional__item {
   display: flex;
   flex-direction: column;
-  padding-top: 15px;
+  padding-top: 14px;
   padding-bottom: 17px;
 
   border-bottom: 1px solid #cdcdcd;
@@ -57,7 +61,7 @@
 
 .additional__caption {
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
 
   font-weight: 400;
   font-size: 16px;
@@ -95,11 +99,29 @@
 }
 
 .additional__offer {
+  position: relative;
+
   min-height: 289px;
+  padding-top: 188px;
 
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 0 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 65px;
+    left: 50%;
+
+    width: 55px;
+    height: 60px;
+
+    background-image: url("../img/icon-gift.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    transform: translateX(-50%);
+  }
 }
 
 .additional__offer-title {
@@ -108,6 +130,7 @@
 
   font-size: 16px;
   line-height: 20px;
+  font-family: $arial;
   text-align: center;
   color: #ffffff;
 }

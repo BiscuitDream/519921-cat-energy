@@ -1,7 +1,29 @@
 .table {
+  // width: 100%;
+  width: 140px;
+
+  border-collapse: collapse;
   font-size: 12px;
   line-height: 16px;
   font-family: $arial;
+
+  // tbody {
+  //   width: 100%;
+  // }
+}
+
+.table tbody {
+  width: 100%;
+}
+
+.table__parameter {
+  padding: 0;
+}
+
+.table__value {
+  padding: 0;
+
+  text-align: right;
 }
 
 @media (min-width: $tablet-width) {
