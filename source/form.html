@@ -8,12 +8,15 @@
   </head>
   <body>
 
+
     <header class="page-header">
       <a class="page-header__logo logo-header" href="index.html">
-        <img class="page-header__logo-image" src="img/logo-mobile.svg" width="200" height="38" alt="Логотип компании Cat Energy">
-        <button class="page-header__nav-toggle" type="button"><span class=" visually-hidden">Открыть меню</span></button>
+        <img class="page-header__logo-image" src="img/logo-mobile.svg" width="200" alt="Логотип компании Cat Energy">
       </a>
       <nav class="page-header__nav main-nav">
+        <button class="page-header__nav-toggle" type="button">
+          <span class=" visually-hidden">Открыть меню</span>
+        </button>
         <ul class="main-nav__list">
           <li class="main-nav__item">
             <a class="main-nav__link" href="index.html">Главная</a>
@@ -123,12 +126,15 @@
     <footer class="page-footer">
       <h2 class="visually-hidden">Контакты</h2>
       <div class="page-footer__contacts contacts">
-        <p class="contacts__text">Приглашаем к сотрудничеству дилеров!</p>
-        <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <p class="contacts__text">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
+        <p class="contacts__address">
+          <span class="contacts__address-street">ул. Большая Конюшенная, д. 19/8</span>
+          <span class="contacts__address-city">Санкт-Петербург</span>
+        </p>
       </div>
 
       <div class="page-footer__map">
-        <img src="img/bg-map-mobile@1x.png" width="320" height="400" alt="Местонахождение магазина на карте">
+        <!-- <img src="img/bg-map-mobile@1x.png" width="320" height="400" alt="Местонахождение магазина на карте"> -->
       </div>
 
       <div class="page-footer__wrapper">
@@ -138,25 +144,32 @@
 
         <div class="page-footer__social social">
           <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link social__link--vkontakte" href="#vkontakte"><span class="visually-hidden">Мы в Вконтакте</span></a>
+            <li class="social__item social__item--vkontakte">
+              <a class="social__link social__link--vkontakte" href="#vkontakte">
+                <span class="visually-hidden">Мы в Вконтакте</span>
+              </a>
             </li>
-            <li class="social__item">
-              <a class="social__link social__link--instagram" href="#instagram"><span class="visually-hidden">Мы в инстаграме</span></a>
+            <li class="social__item social__item--instagram">
+              <a class="social__link social__link--instagram" href="#instagram">
+                <span class="visually-hidden">Мы в инстаграме</span>
+              </a>
             </li>
-            <li class="social__item">
-              <a class="social__link social__link--facebook" href="#facebook"><span class="visually-hidden">Мы в Фейсбуке</span></a>
+            <li class="social__item social__item--facebook">
+              <a class="social__link social__link--facebook" href="#facebook">
+                <span class="visually-hidden">Мы в Фейсбуке</span>
+              </a>
             </li>
           </ul>
         </div>
 
         <div class="page-footer__copyright copyright">
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <img src="img/htmlacademy.svg" width="27" height="34" alt="Логотип HTML Academy">
+          <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
+            <img src="img/htmlacademy.svg" width="40" height="40" alt="Логотип HTML Academy">
           </a>
         </div>
       </div>
     </footer>
+
   </body>
 </html>
