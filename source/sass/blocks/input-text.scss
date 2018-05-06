@@ -36,8 +36,12 @@
 
 @media (min-width: $desktop-width) {
   .input-text {
-    &--contact {
+    &--contacts {
       width: 570px;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
     }
   }
 }
