@@ -31,7 +31,6 @@
 
 .form__program-wrapper-item {
   padding-right: 20px;
-  // padding-bottom: 8px;
   padding-left: 20px;
 
   &--basic {
@@ -86,7 +85,7 @@
 .form__additional-wrapper {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+  // flex-wrap: wrap;
 }
 
 .form__block-title {
@@ -175,12 +174,14 @@
   }
 
   .form__wrapper {
+    padding-top: 73px;
     padding-right: 30px;
+    padding-bottom: 72px;
     padding-left: 30px;
   }
 
   .form__title {
-    margin-bottom: 50px;
+    margin-bottom: 55px;
     padding: 0;
 
     font-size: 60px;
@@ -188,27 +189,53 @@
 
   .form__tagline {
     width: 384px;
-    margin-bottom: 70px;
+    margin-bottom: 66px;
     padding-right: 0;
-    padding-left: 37px;
+    padding-left: 40px;
 
     font-size: 20px;
     line-height: 30px;
   }
 
+  .form__program-wrapper {
+    margin-bottom: 48px;
+  }
+
   .form__program-wrapper-item {
-    padding-right: 37px;
-    padding-left: 37px;
+    margin-right: 37px;
+    margin-left: 41px;
+    padding-right: 0;
+    padding-left: 0;
 
     border-bottom: none;
 
+    &--basic {
+      padding-bottom: 25px;
+    }
+
+    &--contacts {
+      margin-bottom: 45px;
+    }
+
+    &--comment {
+      margin-bottom: 62px;
+    }
+
+    &--additionally {
+      margin-bottom: 13px;
+    }
+
     &--submit {
       flex-direction: row;
+      align-items: center;
+      margin-bottom: 0;
     }
   }
 
   .form__block {
     &--type {
+      padding-top: 34px;
+
       border: 1px solid #e6e6e6;
     }
   }
@@ -219,6 +246,7 @@
 
     &--contacts {
       width: auto;
+      margin-bottom: 76px;
 
       &::before {
         content: "";
@@ -230,7 +258,7 @@
         height: 3px;
 
         background-color: $green;
-        transform: translateY(-50%);
+        // transform: translateY(-50%);
       }
 
       &::after {
@@ -239,11 +267,13 @@
 
         width: 146px;
 
-        transform: translateY(-50%);
+        // transform: translateY(-50%);
       }
     }
 
     &--comment {
+      margin-bottom: 76px;
+
       &::before {
         content: "";
         position: absolute;
@@ -254,7 +284,7 @@
         height: 3px;
 
         background-color: $green;
-        transform: translateY(-50%);
+        // transform: translateY(-50%);
       }
 
       &::after {
@@ -265,6 +295,8 @@
     }
 
     &--additionally {
+      margin-bottom: 66px;
+
       &::before {
         content: "";
         position: absolute;
@@ -275,7 +307,7 @@
         height: 3px;
 
         background-color: $green;
-        transform: translateY(-50%);
+        // transform: translateY(-50%);
       }
 
       &::after {
@@ -293,10 +325,16 @@
 
   .form__additional-wrapper {
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   .form__textarea {
-    min-height: 170px;
+    min-height: 174px;
+    padding: 10px 17px;
+
+    font-size: 20px;
+    line-height: 30px;
   }
 
   .form__required {
@@ -305,6 +343,7 @@
 
   .form-submit {
     margin-right: 60px;
+    margin-bottom: 0;
   }
 }
 

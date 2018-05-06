@@ -23,6 +23,15 @@
   .input-text {
     margin-bottom: 20px;
   }
+
+  .input-text__label {
+    margin-right: 16px;
+  }
+
+  .input-text__input {
+    height: 52px;
+    padding-left: 18px;
+  }
 }
 
 @media (min-width: $desktop-width) {

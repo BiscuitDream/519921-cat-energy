@@ -8,7 +8,11 @@
 
 @media (min-width: $tablet-width) {
   .input-checkbox {
-    width: 300px;
-    margin-bottom: 30px;
+    width: 284px;
+    margin-bottom: 52px;
+  }
+
+  .input-checkbox__label {
+    padding-left: 40px;
   }
 }
