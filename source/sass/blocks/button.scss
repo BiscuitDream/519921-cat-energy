@@ -1,15 +1,60 @@
 .button {
+  display: block;
+  padding-top: 10px;
+  padding-right: 25px;
+  padding-bottom: 10px;
+  padding-left: 25px;
+
   font-size: 16px;
   line-height: 20px;
+  text-align: center;
   color: #ffffff;
   text-transform: uppercase;
 
   background-color: $green;
   border: none;
 
+  &--program {
+    padding-top: 11px;
+    padding-bottom: 11px;
+
+    font-size: 14px;
+    line-height: 18px;
+  }
+
   &--all {
     color: $light-black;
 
     background-color: $gray;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .button {
+    &--program {
+      padding-top: 16px;
+      padding-bottom: 16px;
+
+      font-size: 20px;
+      line-height: 20px;
+    }
+
+    &--submit {
+      // width: 284px;
+      padding-top: 16px;
+      padding-right: 65px;
+      padding-bottom: 16px;
+      padding-left: 65px;
+
+      font-size: 20px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .button {
+    &--submit {
+      min-width: 570px;
+    }
   }
 }

@@ -6,53 +6,127 @@
 }
 
 .programs__header {
+  margin-bottom: 22px;
+  padding-top: 27px;
+
   color: #ffffff;
 
-  background-image: url("../../img/index-background-mobile@1x.jpg");
+  background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
 
+.programs__header-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  margin: 0 auto;
+}
+
 .programs__title {
+  margin: 0;
+  margin-bottom: 23px;
+
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
 }
 
 .programs__slogan {
+  margin: 0;
+  margin-bottom: 26px;
+
   text-transform: uppercase;
 }
 
-.programs__form-link {
-  font-size: 14px;
-  line-height: 18px;
+.programs__picture {
+  margin-bottom: 3px;
 }
+
+// .programs__form-link {
+//   font-size: 14px;
+//   line-height: 18px;
+// }
 
 @media (min-width: $tablet-width) {
   .programs {
     width: 768px;
     margin: 0 auto;
+    margin-top: 73px;
+    margin-bottom: 20px;
 
     text-align: left;
   }
 
   .programs__header {
+    min-height: 810px;
+    margin: 0;
+    padding: 0;
+
     color: $black;
+
+    background: none;
+  }
+
+  .programs__header-wrapper {
+    align-items: flex-start;
+    width: 708px;
+    padding-left: 90px;
   }
 
   .programs__title {
+    width: 430px;
+    margin-bottom: 42px;
+
     font-size: 60px;
     line-height: 60px;
   }
 
   .programs__slogan {
+    margin-bottom: 47px;
+
     font-size: 20px;
     line-height: 20px;
+  }
+
+  .programs__picture {
+    position: relative;
+
+    order: 1;
+    margin-top: -50px;
+  }
+
+  .programs__form-link {
+    position: relative;
+
+    // margin-top: -1px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .programs {
     width: 1300px;
+    margin-top: 122px;
+    margin-bottom: 77px;
+  }
+
+  .programs__header {
+    min-height: 474px;
+    margin-bottom: 80px;
+  }
+
+  .programs__header-wrapper {
+    width: 1220px;
+    padding-left: 80px;
+  }
+
+  .programs__slogan {
+    margin-bottom: 52px;
+  }
+
+  .programs__picture {
+    margin-top: -150px;
+
+    transform: translateX(500px) translateY(-100px);
   }
 }

@@ -1,7 +1,32 @@
-.social__list {
-  display: flex;
+.social {
+  padding-top: 23px;
+  padding-bottom: 20px;
 
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.social__list {
   @include list-reset;
+
+  display: flex;
+  align-items: center;
+  padding-left: 73px;
+}
+
+.social__item {
+  margin-right: 38px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  // &--vkontakte {
+  //   margin-right: 37px;
+  // }
+
+  // &--instagram {
+  //   margin-right: 40px;
+  // }
 }
 
 .social__link {
@@ -11,7 +36,7 @@
     width: 22px;
     height: 12px;
 
-    background-image: url("../../img/icon-vk-mobile.svg");
+    background-image: url("../img/icon-vk-mobile.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
   }
@@ -20,7 +45,7 @@
     width: 16px;
     height: 16px;
 
-    background-image: url("../../img/icon-insta-mobile.svg");
+    background-image: url("../img/icon-insta-mobile.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
   }
@@ -29,8 +54,54 @@
     width: 10px;
     height: 19px;
 
-    background-image: url("../../img/icon-fb-mobile.svg");
+    background-image: url("../img/icon-fb-mobile.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .social {
+    padding: 0;
+
+    border: none;
+  }
+
+  .social__list {
+    padding-left: 0;
+  }
+
+  .social__item {
+    margin-right: 28px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+    // &--vkontakte {
+    //   margin-right: 37px;
+    // }
+
+    // &--instagram {
+    //   margin-right: 40px;
+    // }
+  }
+
+  .social__link {
+    display: block;
+
+    &--vkontakte {
+      width: 30px;
+      height: 16px;
+    }
+
+    &--instagram {
+      width: 23px;
+      height: 23px;
+    }
+
+    &--facebook {
+      width: 14px;
+      height: 28px;
+    }
   }
 }

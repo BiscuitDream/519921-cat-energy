@@ -1,3 +1,28 @@
 .copyright {
-  // свойства
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 17px;
+}
+
+.copyright__link {
+  font-size: 16px;
+  line-height: 16px;
+  font-family: "Arial", sans-serif;
+  color: $light-black;
+}
+
+.copyright__logo {
+  margin-top: 2px;
+  margin-right: -6px;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    padding: 0;
+  }
+
+  .copyright__link {
+    margin-right: 15px;
+  }
 }
