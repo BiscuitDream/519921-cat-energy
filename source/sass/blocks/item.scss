@@ -145,12 +145,20 @@
     margin-bottom: 33px;
   }
 
+  .item__picture-wrapper {
+    display: flex;
+    align-items: flex-end;
+    width: 324px;
+    height: 208px;
+    margin-top: -82px;
+  }
+
   .item__wrapper-caption {
     display: flex;
     flex-direction: column;
     align-items: stretch;
     align-self: stretch;
-    padding-top: 20px;
+    padding-top: 38px;
 
     &--more {
       padding-top: 165px;
