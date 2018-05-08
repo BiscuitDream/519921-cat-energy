@@ -60,8 +60,12 @@
   .main-nav__link {
     padding-bottom: 4px;
 
-    // color: #ffffff;
+    &--index {
+      color: #ffffff;
+    }
 
-    // border-bottom: 2px solid #ffffff;
+    &--active-index {
+      border-bottom: 2px solid #ffffff;
+    }
   }
 }

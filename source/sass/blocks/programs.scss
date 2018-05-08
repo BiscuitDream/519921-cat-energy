@@ -14,6 +14,11 @@
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 0 0;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/index-background-mobile@2x.jpg");
+    background-size: 320px auto;
+  }
 }
 
 .programs__header-wrapper {
@@ -40,7 +45,7 @@
 }
 
 .programs__picture {
-  margin-bottom: 3px;
+  // margin-bottom: 3px;
 }
 
 // .programs__form-link {
@@ -52,13 +57,15 @@
   .programs {
     width: 768px;
     margin: 0 auto;
-    margin-top: 73px;
+    margin-top: 57px;
     margin-bottom: 20px;
 
     text-align: left;
   }
 
   .programs__header {
+    position: relative;
+
     min-height: 810px;
     margin: 0;
     padding: 0;
@@ -90,10 +97,12 @@
   }
 
   .programs__picture {
-    position: relative;
+    position: absolute;
+    top: 201px;
+    left: 29px;
 
-    order: 1;
-    margin-top: -50px;
+    // order: 1;
+    // margin-top: -50px;
   }
 
   .programs__form-link {
@@ -106,13 +115,41 @@
 @media (min-width: $desktop-width) {
   .programs {
     width: 1300px;
-    margin-top: 122px;
+    margin-top: 108px;
     margin-bottom: 77px;
   }
 
   .programs__header {
     min-height: 474px;
     margin-bottom: 80px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      // background-position: 0 0;
+      top: -222px;
+      left: 50%;
+
+      width: 720px;
+      height: 696px;
+
+      background-image: url("../img/index-background-desktop@1x.jpg");
+      background-repeat: no-repeat;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/index-background-desktop@2x.jpg");
+        background-size: 720px auto;
+      }
+    }
+
+    // background-image: url("../img/index-background-desktop@1x.jpg");
+    // background-repeat: no-repeat;
+    // background-position: 0 0;
+
+    // @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    //   background-image: url("../img/index-background-desktop@2x.jpg");
+    //   background-size: 720px auto;
+    // }
   }
 
   .programs__header-wrapper {
@@ -125,8 +162,11 @@
   }
 
   .programs__picture {
-    margin-top: -150px;
+    top: -81px;
+    right: 259px;
+    left: auto;
+    // margin-top: -150px;
 
-    transform: translateX(500px) translateY(-100px);
+    // transform: translateX(500px) translateY(-100px);
   }
 }
