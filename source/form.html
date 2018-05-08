@@ -11,7 +11,11 @@
 
     <header class="page-header">
       <a class="page-header__logo logo-header" href="index.html">
-        <img class="page-header__logo-image" src="img/logo-mobile.svg" width="200" alt="Логотип компании Cat Energy">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+          <img class="page-header__logo-image" src="img/logo-mobile.svg" width="200" alt="Логотип компании Cat Energy">
+        </picture>
       </a>
       <nav class="page-header__nav main-nav">
         <button class="page-header__nav-toggle" type="button">
