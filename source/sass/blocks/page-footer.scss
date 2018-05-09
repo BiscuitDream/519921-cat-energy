@@ -10,8 +10,16 @@
 .page-footer__map {
   min-height: 362px;
 
-  background-image: url("../img/bg-map-mobile@1x.png");
+  background-image: url("../img/map-pin.png"), url("../img/bg-map-mobile@1x.png");
   background-repeat: no-repeat;
+  background-position: 50% 45%, 0 -38px;
+  background-size: 58px 53px, auto;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/map-pin.png"), url("../img/bg-map-mobile@2x.png");
+    // background-position: 50% 45%, 0 -38px;
+    background-size: 58px 53px, 320px auto;
+  }
 }
 
 .page-footer__wrapper {
@@ -43,6 +51,16 @@
 
   .page-footer__map {
     min-height: 396px;
+
+    background-image: url("../img/map-pin.png"), url("../img/bg-map-tablet@1x.png");
+    background-position: 50% 50%, 0 -4px;
+    background-size: auto, auto;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/map-pin.png"), url("../img/bg-map-tablet@2x.png");
+      // background-position: 50% 50%, 0 -4px;
+      background-size: auto, 767px auto;
+    }
   }
 
   .page-footer__wrapper {
@@ -73,5 +91,14 @@
 
   .page-footer__map {
     min-height: 400px;
+
+    background-image: url("../img/map-pin.png"), url("../img/bg-map-desktop@1x.png");
+    background-position: 76% 50%, 0 0;
+    background-size: auto, auto;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/map-pin.png"), url("../img/bg-map-desktop@2x.png");
+      background-size: auto, 1440px auto;
+    }
   }
 }
