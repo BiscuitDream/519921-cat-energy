@@ -79,9 +79,9 @@ gulp.task("clean", function () {
   return del("build");
 });
 
-gulp.task("serve", ["style"], function () {
+gulp.task("serve",  function () {
   server.init({
-    server: "source/",
+    server: "build/",
     notify: false,
     open: true,
     cors: true,
