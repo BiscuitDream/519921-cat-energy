@@ -32,19 +32,19 @@ gulp.task("style", function () {
 });
 
 gulp.task("images", function () {
-  return gulp.src("source/img/**/*.{png,jpg,svg}")
+  return gulp.src("build/img/**/*.{png,jpg,svg}")
   .pipe(imagemin([
     imagemin.optipng({optimizationLevel: 3}),
     imagemin.jpegtran({progressive: true}),
     imagemin.svgo()
     ]))
-    .pipe(gulp.dest("source/img/min"));
+    .pipe(gulp.dest("build/img"));
 });
 
 gulp.task("webp", function () {
-  return gulp.src("source/img/**/*.{png,jpg}")
+  return gulp.src("build/img/**/*.{png,jpg}")
     .pipe(webp({quality: 90}))
-    .pipe(gulp.dest("source/img/webp"));
+    .pipe(gulp.dest("build/img/webp"));
 });
 
 gulp.task("sprite", function () {
@@ -96,6 +96,8 @@ gulp.task("build", function (done) {
   run(
     "clean",
     "copy",
+    "images",
+    "webp",
     "style",
     "sprite",
     "html",
