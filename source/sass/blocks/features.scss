@@ -117,6 +117,8 @@
     flex-wrap: wrap;
     // justify-content: space-between;
     padding-bottom: 102px;
+
+    counter-reset: number;
   }
 
   .features__item {
@@ -125,6 +127,8 @@
     padding-top: 111px;
     padding-right: 90px;
     padding-left: 30px;
+
+    counter-increment: number;
 
     &:nth-last-child(2) {
       margin-bottom: 0;
@@ -140,6 +144,18 @@
 
       width: 80px;
       height: 80px;
+    }
+
+    &::after {
+      content: counter(number);
+      position: absolute;
+      top: -40px;
+      left: 145px;
+      z-index: -10;
+
+      font-size: 281px;
+      line-height: 281px;
+      color: $gray;
     }
   }
 
@@ -171,10 +187,15 @@
     margin-bottom: 0;
     padding-top: 112px;
     padding-right: 40px;
+    padding-bottom: 45px;
     padding-left: 40px;
 
     &::before {
       left: 40px;
+    }
+
+    &::after {
+      left: 155px;
     }
   }
 }
