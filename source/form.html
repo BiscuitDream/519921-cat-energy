@@ -83,13 +83,19 @@
             <fieldset class="form__block form__block--contacts">
               <legend class="form__block-title form__block-title--contacts">Контактные данные (владельца кота)</legend>
               <div class="form__contacts-wrapper">
-                <p class="form__item input-text input-text--contacts input-text--email">
+                <p class="form__item input-text input-text--contacts input-text--icon">
                   <label class="input-text__label" for="form-email">E-mail:*</label>
-                  <input class="input-text__input input-text__input--email" type="email" id="form-email" name="email" placeholder="kuklachev@gmail.com">
+                  <input class="input-text__input input-text__input--icon" type="email" id="form-email" name="email" placeholder="kuklachev@gmail.com">
+                  <svg class="input-text__icon" width="17" heigh="13">
+                    <use xlink:href="#icon-mail"></use>
+                  </svg>
                 </p>
-                <p class="form__item input-text input-text--contacts input-text--tel">
+                <p class="form__item input-text input-text--contacts input-text--icon">
                   <label class="input-text__label" for="form-tel">Телефон:*</label>
-                  <input class="input-text__input input-text__input--tel" type="tel" id="form-tel" name="telephone" placeholder="8 (960) 900-60-90">
+                  <input class="input-text__input input-text__input--icon" type="tel" id="form-tel" name="telephone" placeholder="8 (960) 900-60-90">
+                  <svg class="input-text__icon" width="20" heigh="20">
+                    <use xlink:href="#icon-phone"></use>
+                  </svg>
                 </p>
               </div>
             </fieldset>
