@@ -125,7 +125,18 @@
   line-height: 18px;
   text-transform: uppercase;
 
+  border: solid 1px $border;
+
   resize: none;
+
+  &:hover {
+    border: solid 1px $border-hover;
+  }
+
+  &:active {
+    border: solid 2px $border-active;
+    outline: none;
+  }
 }
 
 .form__submit {
