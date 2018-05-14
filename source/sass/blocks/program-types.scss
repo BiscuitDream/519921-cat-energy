@@ -103,6 +103,10 @@
   color: $black;
   text-transform: uppercase;
 
+  &:active {
+    opacity: 0.3;
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -127,6 +131,16 @@
     border-right: none;
     border-bottom-color: transparent;
     transform: translateY(-50%);
+  }
+
+  &:hover::before {
+    right: -36px;
+
+    width: 25px;
+  }
+
+  &:hover::after {
+    right: -42px;
   }
 }
 
@@ -211,6 +225,14 @@
 
     &::after {
       right: -46px;
+    }
+
+    &:hover::before {
+      right: -48px;
+    }
+
+    &:hover::after {
+      right: -54px;
     }
   }
 }
