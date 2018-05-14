@@ -3,6 +3,20 @@
   justify-content: space-between;
   align-items: center;
   padding-top: 17px;
+
+  &:hover {
+    .copyright__logo-image {
+      fill: $green;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.copyright__logo-image {
+  fill: #666666;
 }
 
 .copyright__link {
