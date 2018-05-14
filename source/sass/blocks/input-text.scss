@@ -57,6 +57,17 @@
   font: inherit;
   text-transform: uppercase;
 
+  border: solid 1px $border;
+
+  &:hover {
+    border: solid 1px $border-hover;
+  }
+
+  &:active {
+    border: solid 2px $border-active;
+    outline: none;
+  }
+
   &--email {
     padding-right: 40px;
   }
@@ -65,26 +76,6 @@
     padding-right: 40px;
   }
 }
-
-// #region
-// .input-text__input--email {
-//   position: relative;
-//   padding-right: 40px;
-
-//   &::after {
-//     content: "";
-//     position: absolute;
-//     top: 50%;
-//     display: block;
-//     right: 0;
-//     width: 17px;
-//     height: 13px;
-//     background-image: url("../img/icon-mail.svg");
-//     background-repeat: no-repeat;
-//     background-position: 50% 50%;
-//   }
-// }
-// #endregion
 
 @media (min-width: $tablet-width) {
   .input-text {
