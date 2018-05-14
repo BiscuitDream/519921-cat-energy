@@ -9,6 +9,15 @@
 
   cursor: pointer;
 
+  &:hover::before {
+    border-color: $border-hover;
+  }
+
+  &:active {
+    outline: none;
+    opacity: 0.3;
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -19,7 +28,7 @@
     width: 30px;
     height: 30px;
 
-    border: 1px solid #cfcfcf;
+    border: 1px solid $border;
     border-radius: 50%;
     transform: translateY(-50%);
   }
@@ -42,29 +51,11 @@
   }
 }
 
-// #region
-// .input-radio__label {
-//   position: relative;
-
-//   padding-left: 45px;
-
-//   cursor: pointer;
-
-//   &::before {
-//     content: "";
-//     position: absolute;
-//     left: 0;
-//     top: 50%;
-
-//     width: 30px;
-//     height: 30px;
-
-//     border: 1px solid #cfcfcf;
-//     border-radius: 50%;
-//     transform: translateY(-50%);
-//   }
-// }
-// #endregion
+.input-radio__input:focus + label::before {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  // outline: rgb(59, 153, 252) auto 5px;
+}
 
 @media (min-width: $tablet-width) {
   .input-radio {
