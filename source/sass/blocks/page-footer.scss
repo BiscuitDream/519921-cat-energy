@@ -89,18 +89,24 @@
   .page-footer {
     position: relative;
 
-    width: 1440px;
+    width: 1300px;
   }
 
   .page-footer__wrapper {
     width: 1220px;
   }
 
+  .page-footer__contacts {
+    position: absolute;
+    top: 95px;
+    left: 40px;
+  }
+
   .page-footer__map {
     height: 400px;
 
     background-image: url("../img/map-pin.png"), url("../img/bg-map-desktop@1x.png");
-    background-position: 76% 50%, 0 0;
+    background-position: 79% 50%, -70px 0;
     background-size: auto, auto;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
