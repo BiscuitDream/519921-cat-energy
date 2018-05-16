@@ -22,42 +22,6 @@
   border-bottom: 1px solid #e6e6e6;
 }
 
-.page-header__nav-toggle {
-  position: absolute;
-  top: 0;
-  right: 0;
-
-  display: block;
-  width: 50px;
-  height: 60px;
-  padding: 0;
-
-  background-color: #ffffff;
-  border: none;
-  cursor: pointer;
-
-  &::after,
-  &::before {
-    content: "";
-    position: absolute;
-    right: 20px;
-
-    width: 23px;
-    height: 2px;
-
-    background-color: #000000;
-  }
-
-  &::after {
-    transform: rotate(45deg);
-  }
-
-  &::before {
-    transform: rotate(-45deg);
-  }
-}
-
-
 @media (min-width: $tablet-width) {
   .page-header {
     flex-direction: row;

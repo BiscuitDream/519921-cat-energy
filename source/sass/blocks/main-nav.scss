@@ -2,6 +2,41 @@
   @include list-reset;
 }
 
+.main-nav__toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  display: block;
+  width: 50px;
+  height: 60px;
+  padding: 0;
+
+  background-color: #ffffff;
+  border: none;
+  cursor: pointer;
+
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    right: 20px;
+
+    width: 23px;
+    height: 2px;
+
+    background-color: #000000;
+  }
+
+  &::after {
+    transform: rotate(45deg);
+  }
+
+  &::before {
+    transform: rotate(-45deg);
+  }
+}
+
 .main-nav__item {
   padding-top: 22px;
   padding-bottom: 23px;
