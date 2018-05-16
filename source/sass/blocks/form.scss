@@ -341,8 +341,6 @@
 
     &--additionally {
       margin-bottom: 20px;
-      padding-right: 0;
-      padding-left: 0;
     }
   }
 
@@ -356,15 +354,14 @@
     }
   }
 
-  .form__block-title {
-    &--additionally {
-      margin-left: 40px;
-    }
-  }
-
   .form__contacts-wrapper {
     display: flex;
     justify-content: space-between;
+  }
+
+  .form__additional-wrapper {
+    margin-right: -40px;
+    margin-left: -40px;
   }
 
   .form__submit {
