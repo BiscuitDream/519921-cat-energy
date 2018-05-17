@@ -14,6 +14,16 @@
   background-color: $green;
   border: none;
 
+  &:hover {
+    background-color: $green-dark;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+
+    background-color: $green-dark;
+  }
+
   &--program {
     padding-top: 11px;
     padding-bottom: 11px;
@@ -26,6 +36,16 @@
     color: $light-black;
 
     background-color: $gray;
+
+    &:hover {
+      background-color: $gray-dark;
+    }
+
+    &:active {
+      color: rgba(68, 68, 68, 0.3);
+
+      background-color: $gray-dark;
+    }
   }
 }
 

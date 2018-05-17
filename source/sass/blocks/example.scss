@@ -280,6 +280,16 @@
     border-radius: 50%;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
     transform: translate(-50%, -50%);
+
+    &:hover {
+      box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.25);
+    }
+
+    &:active {
+      border-width: 2px;
+      border-color: $green;
+      box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.3);
+    }
   }
 
   .example__range-point {
@@ -299,29 +309,29 @@
 @media (min-width: $desktop-width) {
   .example {
     flex-direction: row;
-    width: 1440px;
+    width: 1300px;
   }
 
   .example__wrapper {
-    width: 1440px;
+    width: 1300px;
+    padding-top: 80px;
     // display: flex;
-    padding-top: 125px;
     // padding-right: 40px;
     // padding-left: 40px;
   }
 
   .example__title {
     margin-bottom: 76px;
-    margin-left: 110px;
+    margin-left: 40px;
   }
 
   .example__wrapper-inner {
     position: relative;
 
     display: flex;
-    padding-right: 70px;
+    // padding-right: 70px;
     padding-bottom: 65px;
-    padding-left: 70px;
+    // padding-left: 70px;
 
     background-color: $gray;
   }
@@ -370,7 +380,7 @@
     // margin-bottom: 55px;
     position: absolute;
     top: -189px;
-    right: 71px;
+    right: 0;
 
     margin: 0;
   }
