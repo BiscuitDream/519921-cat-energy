@@ -52,7 +52,7 @@
 }
 
 .input-radio__input:focus + label::before {
-  outline: thin dotted;
+  // outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
   // outline: rgb(59, 153, 252) auto 5px;
 }
