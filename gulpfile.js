@@ -48,14 +48,7 @@ gulp.task("webp", function () {
 });
 
 gulp.task("sprite", function () {
-  return gulp.src([
-    "source/img/icon-mail.svg",
-    "source/img/icon-phone.svg",
-    "source/img/icon-vk-mobile.svg",
-    "source/img/icon-insta-mobile.svg",
-    "source/img/icon-fb-mobile.svg",
-    "source/img/htmlacademy.svg"
-  ])
+  return gulp.src("source/img/sprite/*.svg")
     .pipe(svgstore({
       inlineSvg: true
     }))
