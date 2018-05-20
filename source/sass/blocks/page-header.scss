@@ -44,6 +44,29 @@
     z-index: 10;
 
     width: 1220px;
+
+    &--background {
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 50%;
+        z-index: -10;
+
+        width: 720px;
+        height: 696px;
+
+        background-color: $green;
+        background-image: url("../img/index-background-desktop@1x.jpg");
+        background-repeat: no-repeat;
+        background-position: 0 0;
+
+        @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+          background-image: url("../img/index-background-desktop@2x.jpg");
+          background-size: 720px auto;
+        }
+      }
+    }
   }
 
   .page-header__logo {
