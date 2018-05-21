@@ -117,31 +117,13 @@
     width: 1300px;
     margin-top: 108px;
     margin-bottom: 77px;
+    position: relative;
+    z-index: 10;
   }
 
   .programs__header {
     min-height: 474px;
     margin-bottom: 80px;
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: -222px;
-      left: 50%;
-
-      width: 720px;
-      height: 696px;
-
-      background-color: $green;
-      background-image: url("../img/index-background-desktop@1x.jpg");
-      background-repeat: no-repeat;
-      background-position: 0 0;
-
-      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../img/index-background-desktop@2x.jpg");
-        background-size: 720px auto;
-      }
-    }
   }
 
   .programs__header-wrapper {
