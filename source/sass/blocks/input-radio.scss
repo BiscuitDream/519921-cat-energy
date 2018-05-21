@@ -2,7 +2,7 @@
   margin-bottom: 25px;
 }
 
-.input-radio__input + label {
+.input-radio__input + .input-radio__label {
   position: relative;
 
   padding-left: 45px;
@@ -34,7 +34,7 @@
   }
 }
 
-.input-radio__input:checked + label {
+.input-radio__input:checked + .input-radio__label {
   &::after {
     content: "";
     position: absolute;
@@ -51,7 +51,7 @@
   }
 }
 
-.input-radio__input:focus + label::before {
+.input-radio__input:focus + .input-radio__label::before {
   // outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
   // outline: rgb(59, 153, 252) auto 5px;
@@ -62,7 +62,7 @@
     margin-bottom: 33px;
   }
 
-  .input-radio__input + label {
+  .input-radio__input + .input-radio__label {
     padding-left: 60px;
 
     &::before {
@@ -71,7 +71,7 @@
     }
   }
 
-  .input-radio__input:checked + label {
+  .input-radio__input:checked + .input-radio__label {
     &::after {
       left: 11px;
 
