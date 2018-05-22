@@ -39,6 +39,10 @@
   &--icon {
     padding-right: 40px;
   }
+
+  &:invalid {
+    border: solid 2px $border-invalid;
+  }
 }
 
 .input-text__icon {

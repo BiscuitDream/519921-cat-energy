@@ -86,8 +86,7 @@
 
 @media (min-width: $tablet-width) {
   .main-nav {
-    width: 440px;
-    padding-top: 42px;
+    width: 500px;
   }
 
   .main-nav__toggle {
@@ -96,7 +95,8 @@
 
   .main-nav__list {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: flex-end;
   }
 
   .main-nav__item {
@@ -110,6 +110,10 @@
   }
 
   .main-nav__link {
+    display: block;
+    margin-left: 35px;
+    padding-top: 17px;
+
     color: $input-black;
 
     &--active {
@@ -122,8 +126,7 @@
 
 @media (min-width: $desktop-width) {
   .main-nav {
-    width: 480px;
-    padding-top: 75px;
+    width: 570px;
   }
 
   .main-nav__item {
@@ -131,8 +134,6 @@
   }
 
   .main-nav__link {
-    padding-bottom: 4px;
-
     &--index {
       color: #ffffff;
     }
